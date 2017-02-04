@@ -25,7 +25,7 @@ var articleOne = {
             </p>`
 };
 
-function htmlTemplate(data)
+function createTemplate(data)
 {
     
     var title = data.title;
@@ -79,7 +79,7 @@ app.get('/', function (req, res) {
 
 app.get('/article-one', function(req, res)
 {
-    res.send(htmlTemplate(articleOne));
+    res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function(req, res)
