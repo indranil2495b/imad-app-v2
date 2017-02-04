@@ -3,16 +3,15 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 
-
-var articleOne = {
+var articles= {
+    
+var articleOne: {
     
     title: 'Article one',
-    
     heading: 'Article one bro',
-    
     date:'sep 5 2016',
     
     content:  
@@ -23,7 +22,36 @@ var articleOne = {
             <p>
                 This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
             </p>`
+},
+articleTwo: {
+     title: 'Article two',
+    heading: 'Article two bro',
+    date:'sep 56 2016',
+    
+    content:  
+    
+    `<p>
+                This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
+            </p>
+            <p>
+                This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
+            </p>`
+},
+ articleThree: {
+     title: 'Article three',
+    heading: 'Article three bro',
+    date:'sep 25 2016',
+    
+    content:  
+    
+    `<p>
+                This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
+            </p>
+            <p>
+                This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
+            </p>`
 };
+}
 
 function createTemplate(data)
 {
