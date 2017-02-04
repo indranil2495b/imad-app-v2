@@ -23,7 +23,7 @@ var articles= {
                 This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
             </p>`
 },
-'article-Two': {
+'article-two': {
      title: 'Article two',
     heading: 'Article two bro',
     date:'sep 56 2016',
@@ -37,7 +37,7 @@ var articles= {
                 This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
             </p>`
 },
- 'article-Three': {
+ 'article-three': {
      title: 'Article three',
     heading: 'Article three bro',
     date:'sep 25 2016',
