@@ -11,6 +11,8 @@ var articleOne = {
     
     title: 'Article one',
     
+    heading: 'Article one bro',
+    
     date:'sep 5 2016',
     
     content:  
