@@ -9,7 +9,7 @@ app.use(morgan('combined'))
 
 var articleOne = {
     
-    title:'Article one',
+    title: 'Article one',
     
     date:'sep 5 2016',
     
@@ -23,7 +23,7 @@ var articleOne = {
             </p>`
 };
 
-function createTemplate(data)
+function htmlTemplate(data)
 {
     
     var title = data.title;
