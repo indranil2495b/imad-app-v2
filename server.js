@@ -7,7 +7,7 @@ app.use(morgan('combined'))
 
 
 
-var articleone = {
+var articleOne = {
     title:'Article one',
     date:'sep 5 2016',
     content:  
@@ -74,7 +74,7 @@ app.get('/', function (req, res) {
 
 app.get('/article-one', function(req, res)
 {
-    res.send(createTemplate(articleone));
+    res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function(req, res)
