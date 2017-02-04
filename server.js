@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 var articles= {
     
-var articleOne: {
+articleOne: {
     
     title: 'Article one',
     heading: 'Article one bro',
@@ -51,7 +51,7 @@ articleTwo: {
                 This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.This is the content am gonna write soon for my first article.
             </p>`
 };
-}
+};
 
 function createTemplate(data)
 {
