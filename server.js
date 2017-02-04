@@ -8,8 +8,11 @@ app.use(morgan('combined'))
 
 
 var articleOne = {
-    tittle:'Article one',
+    
+    titttle:'Article one',
+    
     date:'sep 5 2016',
+    
     content:  
     
     `<p>
@@ -23,7 +26,7 @@ var articleOne = {
 function createTemplate(data)
 {
     
-    var tittle = data.tittle;
+    var titttle = data.tittle;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
@@ -33,7 +36,7 @@ function createTemplate(data)
     <head>
         
     <title>
-    ${tittle}
+    ${titttle}
     </title>
     
     <meta name="viewport" contents="width=device-width, initial-sclae=1">
