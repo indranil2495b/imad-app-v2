@@ -38,6 +38,7 @@ var articles= {
             </p>`
 },
  'article-three': {
+     
      title: 'Article three',
     heading: 'Article three bro',
     date:'sep 25 2016',
@@ -57,6 +58,7 @@ function createTemplate(data)
 {
     
     var tittle = data.title;
+    
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
@@ -95,9 +97,8 @@ function createTemplate(data)
     
     
     
-</html>
+</html>`;
 
-`;
 return htmlTemplate;
 }
 
