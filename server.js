@@ -56,7 +56,7 @@ var articles= {
 function createTemplate(data)
 {
     
-    
+    var tittle = data.title;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
@@ -66,7 +66,7 @@ function createTemplate(data)
     <head>
         
     <title>
-   
+    ${tittle}
     </title>
     
     <meta name="viewport" contents="width=device-width, initial-sclae=1">
