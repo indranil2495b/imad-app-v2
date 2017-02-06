@@ -11,9 +11,9 @@ button.onclick = function()
    var request = new XMLHttpRequest();
    
    
-request.onreadystatechange = function ()
+httpRequest.onreadystatechange = function ()
 {
-    if(request.readyState === XMLHttpRequest.DONE)
+    if(httpRequest.readyState === XMLHttpRequest.DONE)
     {
         if(request.status === 200)
         {
@@ -26,8 +26,8 @@ request.onreadystatechange = function ()
 };
 
 
-request.open('GET','http://indranil2495b@ssh.imad.hasura-app.io/counter', true);
-request.send(null);
+httpRequest.open('GET','http://indranil2495b@ssh.imad.hasura-app.io/counter', true);
+httpRequest.send(null);
 
 
 };
