@@ -28,7 +28,7 @@ request.onreadystatechange = function ()
 };
 //make a request 
 
-request.open('GET','http://indranil2495b@ssh.imad.hasura-app.io/counter',true);
+request.open('GET','https://indranil2495b@ssh.imad.hasura-app.io/counter',true);
 request.send(null);
 
 
