@@ -66,7 +66,7 @@ function createTemplate(data)
     <head>
         
     <title>
-    ${tittle}
+   
     </title>
     
     <meta name="viewport" contents="width=device-width, initial-sclae=1">
