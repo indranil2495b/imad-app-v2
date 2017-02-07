@@ -8,7 +8,7 @@ button.onclick = function()
 {
    
     
-   var request = new XMLHttpRequest();
+   var httpRequest = new XMLHttpRequest();
    
    
 httpRequest.onreadystatechange = function ()
@@ -26,7 +26,7 @@ httpRequest.onreadystatechange = function ()
 };
 
 
-httpRequest.open('GET','http://indranil2495b@ssh.imad.hasura-app.io/counter', true);
+httpRequest.open('GET','http://indranil2495b.imad.hasura-app.io/counter', true);
 httpRequest.send(null);
 
 
