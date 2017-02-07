@@ -8,12 +8,12 @@ button.onclick = function()
 {
    
     
-   var httpRequest = new XMLHttpRequest();
+   var request = new XMLHttpRequest();
    
    
-httpRequest.onreadystatechange = function ()
+request.onreadystatechange = function ()
 {
-    if(httpRequest.readyState === XMLHttpRequest.DONE)
+    if(request.readystate === XMLHttpRequest.DONE)
     {
         if(request.status === 200)
         {
@@ -26,8 +26,8 @@ httpRequest.onreadystatechange = function ()
 };
 
 
-httpRequest.open('GET','http://indranil2495b.imad.hasura-app.io/counter', true);
-httpRequest.send(null);
+request.open('GET','http://indranil2495b.imad.hasura-app.io/counter', true);
+request.send(null);
 
 
 };
