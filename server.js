@@ -6,9 +6,69 @@ var app = express();
 app.use(morgan('combined'));
 
 
-
-
-
+var content = 
+{
+    title:'Article one',
+    heading:'Article one welcomes you all',
+    date: 'feb 8 2017',
+    
+    content: `<p>
+    
+    This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....
+    
+    
+    </p>`
+};
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 app.get('/', function (req, res) {
     
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
