@@ -22,7 +22,7 @@ var articleOne =
 
 var articleTwo = 
 {
-    title:'Article one | indranil bhattacharji',
+    title:'Article two | indranil bhattacharji',
     heading:'Article one welcomes you all',
     date: 'feb 15 2017',
     
