@@ -20,6 +20,20 @@ var articleOne =
     </p>`
 };
 
+var articleTwo = 
+{
+    title:'Article one | indranil bhattacharji',
+    heading:'Article one welcomes you all',
+    date: 'feb 15 2017',
+    
+    content: `<p>
+    
+    This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....
+    
+    
+    </p>`
+};
+
 function createTemplate (data)
 {
 
@@ -84,7 +98,7 @@ app.get('/article-one', function (req, res) {
 
 app.get('/article-two', function (req, res) {
     
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(createTemplate(articleTwo));
 });
 
 
