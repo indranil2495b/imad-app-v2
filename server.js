@@ -6,9 +6,9 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content = 
+var articleOne = 
 {
-    title:'Article one',
+    title:'Article one | indranil bhattacharji',
     heading:'Article one welcomes you all',
     date: 'feb 8 2017',
     
@@ -19,55 +19,59 @@ var content =
     
     </p>`
 };
+
+function createTemplate (data)
+{
+
+var title = data.title;
+var date = data.date;
+var heading = data.heading;
+var content = data.content;
+
+var htmlTemplate = `
+
+
+<html>
+    <head>
+    <title>
+        ${title}
+    </title>
+    <meta name= "viewport" contents="width=device-width, initial-scale=1"/>
+    
+    <link href="/ui/style.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <div class="container">
+        <div>
+            <a href="/">HOME</a>
+        </div>
+        <hr/>
+        <h3>
+           ${heading}
+        </h3>
+        <br/>
+        <h3>
+           ${date}
+        </h3>
+        <div>feb 8 2016</div>
+        <hr/>
+        <p>
+            ${content}
+        </p>
+    </div>
+</body>
+</html>
+
+`;
+return htmlTemplate;
+}
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    
+    
+    
         
 app.get('/', function (req, res) {
     
@@ -76,7 +80,7 @@ app.get('/', function (req, res) {
 
 app.get('/article-one', function (req, res) {
     
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function (req, res) {
