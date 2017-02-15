@@ -50,11 +50,10 @@ var htmlTemplate = `
         <h3>
            ${heading}
         </h3>
-        <br/>
+        <hr/>
         <h3>
            ${date}
         </h3>
-        <div>feb 8 2016</div>
         <hr/>
         <p>
             ${content}
