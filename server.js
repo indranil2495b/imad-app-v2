@@ -20,11 +20,11 @@ var articles =
 {
     'article-one': 
 {
-    title:'Article one | indranil bhattacharji',
-    heading:'Article one welcomes you all',
-    date: 'feb 8 2017',
+    $title:'Article one | indranil bhattacharji',
+    $heading:'Article one welcomes you all',
+    $date: 'feb 8 2017',
     
-    content: `<p>
+    $content: `<p>
     
     This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....
     
@@ -34,11 +34,11 @@ var articles =
 
 'article-two': 
 {
-    title:'Article Two | indranil bhattacharji',
-    heading:'Article Two welcomes you all',
-    date: 'feb 15 2017',
+    $title:'Article Two | indranil bhattacharji',
+    $heading:'Article Two welcomes you all',
+    $date: 'feb 15 2017',
     
-    content: `<p>
+    $content: `<p>
     
     This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....
     
