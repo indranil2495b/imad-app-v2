@@ -22,8 +22,7 @@ var articles =
 {
     
     heading:'Article one welcomes you all',
-    date: 'feb 8 2017',
-    
+
     content: `<p>
     
     This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....
@@ -36,7 +35,7 @@ var articles =
 {
     
     heading:'Article Two welcomes you all',
-    date: 'feb 15 2017',
+   
     
     content: `<p>
     
@@ -52,7 +51,7 @@ function createTemplate (data)
 {
 
 
-var date = data.date;
+
 var heading = data.heading;
 var content = data.content;
 
