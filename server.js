@@ -124,7 +124,9 @@ app.get('/counter',function(req, res)
     res.send(counter.toString());
 });
 
-var pool = new Pool(config)
+
+
+var pool = new Pool(config);
 app.get('/test-db',function(req,res)
 {
     //make select-request
