@@ -52,7 +52,7 @@ var htmlTemplate = `
         </h3>
         <hr/>
         <h3>
-           ${date}
+           ${date.toDateString()}
         </h3>
         <hr/>
         <p>
