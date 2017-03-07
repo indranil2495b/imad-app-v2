@@ -20,9 +20,10 @@ var articles =
 {
     'article-one': 
 {
-    
+    title:'Article one | indranil bhattacharji',
     heading:'Article one welcomes you all',
-
+    date: 'feb 8 2017',
+    
     content: `<p>
     
     This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....This is my first web app.....
@@ -33,9 +34,9 @@ var articles =
 
 'article-two': 
 {
-    
+    title:'Article Two | indranil bhattacharji',
     heading:'Article Two welcomes you all',
-   
+    date: 'feb 15 2017',
     
     content: `<p>
     
@@ -50,8 +51,8 @@ var articles =
 function createTemplate (data)
 {
 
-
-
+var title = data.title;
+var date = data.date;
 var heading = data.heading;
 var content = data.content;
 
@@ -60,7 +61,9 @@ var htmlTemplate = `
 
 <html>
     <head>
-   
+    <title>
+        ${title}
+    </title>
     <meta name= "viewport" contents="width=device-width, initial-scale=1"/>
     
     <link href="/ui/style.css" rel="stylesheet"/>
@@ -110,6 +113,17 @@ app.get('/:articleName', function (req, res) {
 });
 
 
+
+
+
+
+var counter = 0;
+app.get('/counter',function(req, res)
+{
+    counter = counter + 1;
+    res.send(counter.toString());
+});
+
 var pool = new Pool(config)
 app.get('/test-db',function(req,res)
 {
@@ -124,7 +138,7 @@ app.get('/test-db',function(req,res)
         }
         else
         {
-            res.send(JSON.stringfy(result));
+            res.send(JSON.stringfy(result.rows));
         }
     
     });
@@ -132,13 +146,7 @@ app.get('/test-db',function(req,res)
 });
 
 
-
-var counter = 0;
-app.get('/counter',function(req, res)
-{
-    counter = counter + 1;
-    res.send(counter.toString());
-});
+//........................................................................
 
 
 
