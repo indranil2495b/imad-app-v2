@@ -127,7 +127,7 @@ app.get('/counter',function(req, res)
 
 
 var pool = new Pool(config);
-app.get('/test-db',function(req,res)
+app.get('/testdb',function(req, res)
 {
     //make select-request
     //return a response
