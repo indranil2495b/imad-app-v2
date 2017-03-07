@@ -20,7 +20,7 @@ var articles =
 {
     'article-one': 
 {
-    title:'Article one | indranil bhattacharji',
+    
     heading:'Article one welcomes you all',
     date: 'feb 8 2017',
     
@@ -34,7 +34,7 @@ var articles =
 
 'article-two': 
 {
-    title:'Article Two | indranil bhattacharji',
+    
     heading:'Article Two welcomes you all',
     date: 'feb 15 2017',
     
@@ -61,9 +61,7 @@ var htmlTemplate = `
 
 <html>
     <head>
-    <title>
-        ${title}
-    </title>
+   
     <meta name= "viewport" contents="width=device-width, initial-scale=1"/>
     
     <link href="/ui/style.css" rel="stylesheet"/>
